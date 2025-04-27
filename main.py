@@ -60,7 +60,7 @@ class AccountDB:
         """Добавляет новый аккаунт в базу данных"""
         with self.conn:
             self.conn.execute(
-                "INSERT INTO accounts (login_url, password, location) VALUES (?, ?, ?, ?)",
+                "INSERT INTO accounts (login_url, password, location) VALUES (?, ?, ?)",
                 (login_url, password, location),
             )
 
